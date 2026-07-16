@@ -551,6 +551,11 @@
   .reveal{ opacity:0; transform: translateY(18px); transition: opacity 0.7s ease, transform 0.7s ease; }
   .reveal.in{ opacity:1; transform:none; }
 
+.hero-schedule{ display:flex; gap: 24px; flex-wrap:wrap; margin-top: 26px; }
+.hero-schedule-item{ display:flex; align-items:center; gap:8px; font-size:0.92rem; color: var(--ink-soft); }
+.hero-schedule-item svg{ width:17px; height:17px; color: var(--ember); flex-shrink:0; }
+.hero-schedule-item strong{ color: var(--ink); font-weight:600; }
+@media (max-width:880px){ .hero-schedule{ justify-content:center; } }
 </style>
 </head>
 <body>
@@ -592,6 +597,16 @@
         <a href="#registro" class="btn btn-primary">Regístrate con nosotros</a>
         <a href="#visitanos" class="btn btn-outline">Visítanos</a>
       </div>
+      <div class="hero-schedule">
+  <div class="hero-schedule-item">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+    <span><strong>Domingo</strong> 3:00 PM</span>
+  </div>
+  <div class="hero-schedule-item">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+    <span><strong>Jueves</strong> 7:30 PM</span>
+  </div>
+</div>
     </div>
     <div class="hero-emblem">
       <div class="hero-emblem-glow"></div>
